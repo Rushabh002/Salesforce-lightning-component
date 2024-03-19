@@ -1,0 +1,115 @@
+.custom-container {
+    display: flex;
+    background-color: #4400ba;
+    justify-content: flex-start;
+    padding: 25px;
+    
+}
+.img1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: 20%;
+}
+.img2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+.heading{
+    text-align: left;
+    background-color: rgb(238, 238, 238);
+    padding: 15px;
+    margin: 20px;
+    border-radius: 1.5%;
+}
+.card{
+    background-color: white;
+    padding: 25px;
+    justify-content: center;
+    border-radius: 2%;
+}
+
+.button-container {
+    text-align: center;
+}
+.form-data{
+    width: 400px;
+    margin-left: 30px;
+}
+.left-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.form-container {
+
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.form-content form {
+    max-width: 500px; 
+    width: 100%; 
+    margin-right: 20px;
+}
+
+.footer {
+    background-color: #032d60;
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+    margin-top: auto;
+}
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1, h2, p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+li{
+    
+    margin-top: 3px;
+}
+ul{
+    margin-left: 90px;
+    font-size: 16px;
+}
+li:before{
+    content: "•";
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.white-text {
+    color: white; 
+}
+
+.white-text li {
+    color: white; 
+}

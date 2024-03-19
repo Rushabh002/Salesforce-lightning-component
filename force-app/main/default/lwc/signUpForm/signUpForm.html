@@ -1,0 +1,63 @@
+<template> 
+    <div class="custom-container">
+        <div class="left-content">
+            <img src="https://resilient-shark-ikl7tg-dev-ed--c.vf.force.com/resource/1710841094000/pcpic" alt="Image Description" class="img2">
+            <br>
+            <br>
+            <br>
+            <h1 class="white-text" style="font-size: 30px;font-weight: 900;">Build enterprise-quality apps fast to bring your ideas to life</h1>
+            <ul class="white-text">
+                <li>&nbsp;&nbsp;&nbsp;Build apps fast with drag and drop tools</li>
+                <li>&nbsp;&nbsp;&nbsp;Customize your data model with clicks</li>
+                <li>&nbsp;&nbsp;&nbsp;Go further with Apex code</li>
+                <li>&nbsp;&nbsp;&nbsp;Integrate with anything using powerful APIs</li>
+                <li>&nbsp;&nbsp;&nbsp;Stay protected with enterprise-grade security</li>
+                <li>&nbsp;&nbsp;&nbsp;Customize UI with clicks or any leading-edge web framework</li>
+            </ul>
+        </div>
+
+        <div class="form-container">
+            <div class="card">
+                <img src="https://resilient-shark-ikl7tg-dev-ed--c.vf.force.com/resource/1710829753000/logopic" alt="Image Description" class="img1">
+                <div class="form-content">
+                    <form>
+                        <h1 style="color: #032d60;font-weight: 900;">Sign up for your Salesforce Developer Edition</h1>
+                        <h2>A full-featured copy of the Platform, for free</h2>
+                        <div class ="heading">
+                        Complete the form to start your free trial. Our team will be in touch to help you make the most of your trial.
+                        </div>
+                        <div class="form-data">
+                            <lightning-input label="First Name" value={firstName} onchange={handleFirstNameChange} required></lightning-input>
+                            <lightning-input label="Last Name" value={lastName} onchange={handleLastNameChange} required></lightning-input>
+                            <lightning-input label="Email" type="email" value={email} onchange={handleEmailChange} required></lightning-input>
+                            <lightning-combobox label="Role" options={roleOptions} value={role} onchange={handleRoleChange} required></lightning-combobox>
+                            <lightning-input label="Company" value={company} onchange={handleCompanyChange} required></lightning-input>
+                            <lightning-combobox label="Country/Region" options={countryOptions} value={country} onchange={handleCountryChange} required></lightning-combobox>
+                            <lightning-input label="Postal Code" value={postalCode} onchange={handlePostalCodeChange} required></lightning-input>
+                            <lightning-input label="Username" value={username} onchange={handleUsernameChange} required></lightning-input>
+                            <p>Your username must be in the form of an email address (it does not have to be real). It must be unique and cannot be associated with another Salesforce login credential.</p>
+                            <br>
+                            <div class="button-container">
+                                <lightning-button label="Sign Up" onclick={createSignUp}></lightning-button>
+                            </div>                        
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© Copyright 2024 Salesforce, Inc. All rights reserved. Various trademarks held by their respective owners. Salesforce, Inc. Salesforce Tower, 415 Mission Street, 3rd Floor, San Francisco, CA 94105, United States</p>
+        <p>
+            <a href="https://www.salesforce.com/company/privacy/">Privacy Information</a> 
+            <a href="https://www.salesforce.com/company/program-agreement/">Terms of Use</a> 
+            <a href="https://www.salesforce.com/company/legal/">Legal</a> 
+            <a href="https://www.salesforce.com/company/privacy/full_privacy/#nav_info">Use of Cookies</a> 
+            <a href="https://trust.salesforce.com/">Trust</a> 
+            <a href="https://developer.salesforce.com/signup#">Cookie Preferences</a> 
+            <a href="https://www.salesforce.com/form/other/privacy-request/">Your Privacy Choices</a> 
+            <a href="https://www.salesforce.com/company/disclosure/">Responsible Disclosure</a> 
+            <a href="https://www.salesforce.com/company/contact-us/?d=cta-glob-footer-11">Contact</a>
+        </p>
+    </div>
+</template>

@@ -28,15 +28,27 @@
                         Complete the form to start your free trial. Our team will be in touch to help you make the most of your trial.
                         </div>
                         <div class="form-data">
-                            <lightning-input label="First Name" value={firstName} onchange={handleFirstNameChange} required></lightning-input>
-                            <lightning-input label="Last Name" value={lastName} onchange={handleLastNameChange} required></lightning-input>
-                            <lightning-input label="Email" type="email" value={email} onchange={handleEmailChange} required></lightning-input>
-                            <lightning-combobox label="Role" options={roleOptions} value={role} onchange={handleRoleChange} required></lightning-combobox>
-                            <lightning-input label="Company" value={company} onchange={handleCompanyChange} required></lightning-input>
-                            <lightning-combobox label="Country/Region" options={countryOptions} value={country} onchange={handleCountryChange} required></lightning-combobox>
-                            <lightning-input label="Postal Code" value={postalCode} onchange={handlePostalCodeChange} required></lightning-input>
-                            <lightning-input label="Username" value={username} onchange={handleUsernameChange} required></lightning-input>
-                            <p>Your username must be in the form of an email address (it does not have to be real). It must be unique and cannot be associated with another Salesforce login credential.</p>
+                            <lightning-input label="First Name" placeholder="Your first name" value={firstName} onchange={handleFirstNameChange} required></lightning-input>
+                            <br>
+                            <lightning-input label="Last Name" placeholder="Your last name" value={lastName} onchange={handleLastNameChange} required></lightning-input>
+                            <br>
+                            <lightning-input label="Email" placeholder="Your email address" type="email" value={email} onchange={handleEmailChange} required></lightning-input>
+                            <br>
+                            <lightning-combobox label="Role" placeholder="Your job role" options={roleOptions} value={role} onchange={handleRoleChange} required></lightning-combobox>
+                            <br>
+                            <lightning-input label="Company" placeholder="Company Name" value={company} onchange={handleCompanyChange} required></lightning-input>
+                            <br>
+                            <lightning-combobox label="Country/Region" placeholder="" options={countryOptions} value={country} onchange={handleCountryChange} required></lightning-combobox>
+                            <br>
+                            <lightning-input label="Postal Code" placeholder="Your postal code" value={postalCode} onchange={handlePostalCodeChange} required></lightning-input>
+                            <br>
+                            <lightning-input label="Username" placeholder="jane@company.sandbox" value={username} onchange={handleUsernameChange} required></lightning-input>
+                            <p style="text-align: left;">Your username must be in the form of an email address (it does not have to be real). It must be unique and cannot be associated with another Salesforce login credential.<a href="https://help.salesforce.com/">Read more about username recommendations.</a> </p>
+                            <br>
+                            <input type="checkbox" id="agreementCheckbox" required style="font-size: 14px;">
+                            <label for="agreementCheckbox">  I agree to the <a href="https://www.salesforce.com/content/dam/web/en_us/www/documents/legal/salesforce_Developer_MSA.pdf"> Main Services Agreement — Developer Services</a> and <a href="https://www.salesforce.com/company/program-agreement/">Salesforce Program Agreement.</a></label>
+                            <br>
+                            <br>
                             <br>
                             <div class="button-container">
                                 <lightning-button label="Sign Up" onclick={createSignUp}></lightning-button>
